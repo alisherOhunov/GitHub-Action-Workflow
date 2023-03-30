@@ -7,7 +7,7 @@ jobs:
     steps:
       -
         name: Say Hello
-        run: echo "$GITHUB_WORKSPACE/index.php" >> $GITHUB_PATH
+        run: echo "$AA/BB/bin/index.php" >> $GITHUB_PATH
       -
         name: This is current path
         run: echo $GITHUB_PATH
