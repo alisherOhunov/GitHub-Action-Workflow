@@ -7,13 +7,7 @@ jobs:
     steps:
       -
         name: Say Hello
-        run: echo "Hello world!"
+        run: echo "$GITHUB_WORKSPACE/index.php" >> $GITHUB_PATH
       -
-        name: Do stuff
-        run: |
-          echo "Step 1..."
-          echo "Step 2..."
-          echo "Step 3..."
-      -
-        name: Say Goodbye
-        run: echo "Goodbye!"
+        name: This is current path
+        run: echo $GITHUB_PATH
